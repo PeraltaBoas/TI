@@ -1,3 +1,45 @@
 body{
-    font-size: 500px;
+    margin: 0px;
+    font-size: 24px;
+    background-color:black;
+}
+
+header{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+}
+
+h1#h1titulo{
+    display: flex;
+    justify-content: left;
+}
+
+img#logotitulo{
+    height: 100px;
+}
+
+img#imgbackground{
+    width: 100%;
+    position: absolute;
+}
+
+h1#tituloPrincipal{
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+
+    color: white;
+    position: relative;
+    
+}
+
+footer{
+    background-color: #f8b400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100%;
 }
