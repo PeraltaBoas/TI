@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css"/>
+    <title>IPSReceitas</title>
+</head>
+<body>
+
+    <style>
+        *{
+            margin: 0;
+        }
+
+    </style>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <header id="header-main">
+        <a href="main.html" id="header-buttons"><h1 id="h1-header-main">IPSReceitas</h1></a>
+        <div id="header-search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button>🔎</button>
+        </div>
+
+        <a href="receitas.html" id="header-buttons">Receitas</a>
+        <button class="open-button" onclick="openForm()">Conta</button>
+
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1 style="background-color: white; margin-left: 13.5%;">Iniciar sessão</h1>
+          
+              <label for="email" ><b>Email</b></label>
+              <input type="text" placeholder="Email" name="email" required>
+          
+              <label for="psw"><b>Palavra-passe</b></label>
+              <input type="password" placeholder="Palavra-passe" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+
+    </header>
+
+    <div id="tudo">
+        <div id="lado"></div>
+        <div id="centro">
+                <div id="receita-titulo">
+                    <h1> Almôndegas</h1>
+                </div>
+
+                <div id="receita-imagem">
+                    <img src="almondegas.pt.jpg" alt="Almondegas">
+                </div>
+                <div id="preparos">
+                    <div id="receita-ingredientes">
+                        <h2>Ingredientes: </h2>
+
+                        <div id="Ingredientes">
+                            <label class="container">500/600 gr carne de vaca picada
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 cebola
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">2 dentes de alho
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 raminho salsa
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 ovo
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">4 colheres sopa pão ralado
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">200ml vinho branco
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">200ml polpa de tomate
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">Sal
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">Pimenta
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">Piri-piri
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">2 folhas de loureiro
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">Azeite
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">Farinha
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">Noz moscada
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                    <div id="receita-passo-a-passo">
+                        <h2>Passo a passo: </h2>
+                            <div id="passo-a-passo">
+                                <div id="seguidos"><div id="numero">1</div>  <a id="passo">Começar por picar a cebola bem picadinha, assim como o alho, e a salsa.</a></div>
+                                <div id="seguidos"><div id="numero">2</div>  <a id="passo">Juntar à carne picada, temperar com sal, pimenta e misturar tudo com as mãos.</a></div>
+                                <div id="seguidos"><div id="numero">3</div>  <a id="passo">Juntar o ovo e o pão ralado, e mexer mais um pouco para ficar tudo bem misturado.</a></div>
+                                <div id="seguidos"><div id="numero">4</div>  <a id="passo">Moldar as almôndegas com as mãos, fazendo bolinhas. Depois passar por farinha e reservar.</a></div>
+                                <div id="seguidos"><div id="numero">5</div>  <a id="passo">Numa frigideira ou tacho de preferência anti-aderente, colocar azeite a tapar o fundo e as folhas de loureiro, e levar ao lume.<a></div>
+                                <div id="seguidos"><div id="numero">6</div>  <a id="passo">Assim que estiver quente, colocar as almôndegas para dourarem e selarem os sucos, virando-as.</a></div>
+                                <div id="seguidos"><div id="numero">7</div>  <a id="passo">Acrescentar de seguida o vinho e a polpa de tomate e deixar cozinhar em lume brando, virando as almôndegas com cuidado para que cozinhem de ambos os lados.</a></div>
+                                <div id="seguidos"><div id="numero">8</div>  <a id="passo">Acrescentar cerca de 100 ml de água. Temperar com sal, piri-piri a gosto e uns pózinhos de noz moscada. Demora cerca de 25/30 minutos.</a></div>
+                                <div id="seguidos"><div id="numero">9</div>  <a id="passo">Enfeitar com salsa.</a></div>
+
+                            </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer style="margin-top: 100px;">
+        <h2 id="h2footer">&copy; 2025 IPSReceitas. Sem Direitos Reservados.</h2>
+    </footer>
+
+</body>
+</html>

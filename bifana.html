@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css"/>
+    <title>IPSReceitas</title>
+</head>
+<body>
+
+    <style>
+        *{
+            margin: 0;
+        }
+
+    </style>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <header id="header-main">
+        <a href="main.html" id="header-buttons"><h1 id="h1-header-main">IPSReceitas</h1></a>
+        <div id="header-search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button>🔎</button>
+        </div>
+
+        <a href="receitas.html" id="header-buttons">Receitas</a>
+        <button class="open-button" onclick="openForm()">Conta</button>
+
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1 style="background-color: white; margin-left: 13.5%;">Iniciar sessão</h1>
+          
+              <label for="email" ><b>Email</b></label>
+              <input type="text" placeholder="Email" name="email" required>
+          
+              <label for="psw"><b>Palavra-passe</b></label>
+              <input type="password" placeholder="Palavra-passe" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+
+    </header>
+
+    <div id="tudo">
+        <div id="lado"></div>
+        <div id="centro">
+                <div id="receita-titulo">
+                    <h1>Bifana</h1>
+                </div>
+
+                <div id="receita-imagem">
+                    <img src="bifana.png" alt="Almondegas">
+                </div>
+                <div id="preparos">
+                    <div id="receita-ingredientes">
+                        <h2>Ingredientes: </h2>
+
+                        <div id="Ingredientes">
+                            <label class="container">20 ml de azeite
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 c. de sopa de banha
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 cebola
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">3 dentes de alho
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 folha de louro
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">390 g de tomate
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 c. chá de cominhos
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">200ml polpa de tomate
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 c. chá de flocos de chili
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 c. chá pimenta preta
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">300 ml de cerveja
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 c. chá de sal
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">500 ml de água
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 kg de bifanas cortadas bem finas
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div id="receita-passo-a-passo">
+                        <h2>Passo a passo: </h2>
+                            <div id="passo-a-passo">
+                                <div id="seguidos"><div id="numero">1</div>  <a id="passo">Num tacho colocar a cebola, o alho e as folhas de louro juntamente com o azeite e a banha sem deixar alourar.</a></div>
+                                <div id="seguidos"><div id="numero">2</div>  <a id="passo">Acrescentar os tomates pelados e temperar com os cominhos, a pimenta e o piripiri.</a></div>
+                                <div id="seguidos"><div id="numero">3</div>  <a id="passo">Juntar as cervejas e temperar com sal a gosto. Deixar levantar fervura. Remover as folhas de louro e triturar tudo com a ajuda de uma varinha mágica.</a></div>
+                                <div id="seguidos"><div id="numero">4</div>  <a id="passo">Acrescentar água se necessário e deixar cozinhar até ferver e engrossar um pouco o molho.<a></div>
+                                <div id="seguidos"><div id="numero">5</div>  <a id="passo">Juntar as bifanas e deixar estufar lentamente neste líquido. Rectificar a espessura do caldo e temperos, caso necessário.</a></div>
+                                <div id="seguidos"><div id="numero">6</div>  <a id="passo">Servir as bifanas no prato e regar com molho.</a></div>
+
+                            </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer style="margin-top: 100px;">
+        <h2 id="h2footer">&copy; 2025 IPSReceitas. Sem Direitos Reservados.</h2>
+    </footer>
+
+</body>
+</html>

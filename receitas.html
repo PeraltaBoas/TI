@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>IPSReceitas</title>
+</head>
+<body>
+
+    <style>
+        *{
+            margin: 0;
+        }
+
+    </style>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <header id="header-main">
+        <a href="main.html" id="header-buttons"><h1 id="h1-header-main">IPSReceitas</h1></a>
+        <div id="header-search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button>🔎</button>
+        </div>
+
+        <a href="receitas.html" id="header-buttons">Receitas</a>
+        <button class="open-button" onclick="openForm()">Conta</button>
+
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1 style="background-color: white; margin-left: 13.5%;">Iniciar sessão</h1>
+          
+              <label for="email" ><b>Email</b></label>
+              <input type="text" placeholder="Email" name="email" required>
+          
+              <label for="psw"><b>Palavra-passe</b></label>
+              <input type="password" placeholder="Palavra-passe" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+
+    </header>
+
+    
+    <div id="bolos" style="margin-top: 50px;">
+        <div id="titulo">
+            <hr style="width: 475px;"><h1>Carne</h1><hr style="width: 475px;">
+        </div>
+        <div id="tres">
+            <div class="card">
+                <div id="imagem">
+                    <img src="almondegas.pt.jpg" alt="Almôndegas">
+                </div>
+                <div class="card-content">
+                    <a href="Almondegas.html"><h2>Almôndegas</h2></a>
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+                    <div class="info">
+                        <span>90 MIN ⏱</span>
+                        <span>FÁCIL</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="card">
+                <div id="imagem">
+                    <img src="bifana.png" alt="Bifana">
+                </div>
+                <div class="card-content">
+                    <a href="bifana.html"><h2>Bifana</h2></a>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <div class="info">
+                        <span>20 MIN ⏱</span>
+                        <span>FÁCIL</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="card">
+                <div id="imagem">
+                    <img src="prego.png" alt="Prego">
+                </div>
+                <div class="card-content">
+                    <h2>Prego</h2>
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+                    <div class="info">
+                        <span>90 MIN ⏱</span>
+                        <span>FÁCIL</span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+     
+    <div id="bolos">
+        <div id="titulo">
+            <hr style="width: 475px;"><h1>Peixe</h1><hr style="width: 475px;">
+        </div>
+        <div id="tres">
+            <div class="card">
+                <div id="imagem">
+                    <img src="bacalhau.png" alt="Bacalhau Cozido">
+                </div>
+                <div class="card-content">
+                    <h2>Bacalhau Cozido c/ Batatas</h2>
+                    <div class="rating">
+                        ★★★☆☆
+                    </div>
+                    <div class="info">
+                        <span>160 MIN ⏱</span>
+                        <span>MÉDIO</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="card">
+                <div id="imagem">
+                    <img src="bacalhauagomesdesa.png" alt="Bacalhau À Gomes de Sá">
+                </div>
+                <div class="card-content">
+                    <h2>Bacalhau À Gomes de Sá</h2>
+                    <div class="rating">
+                        ★★☆☆☆
+                    </div>
+                    <div class="info">
+                        <span>210 MIN ⏱</span>
+                        <span>DIFÍCIL</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="card">
+                <div id="imagem">
+                    <img src="bacalhauabras.png" alt="Bacalhau À Brás">
+                </div>
+                <div class="card-content">
+                    <h2>Bacalhau À Brás</h2>
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+                    <div class="info">
+                        <span>140 MIN ⏱</span>
+                        <span>FÁCIL</span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div id="bolos">
+        <div id="titulo">
+            <hr style="width: 425px;"><h1>Sobremesas</h1><hr style="width: 425px;">
+        </div>
+        <div id="tres">
+            <div class="card">
+                <div id="imagem">
+                    <img src="pudim.png" alt="Pudim de leite condensado">
+                </div>
+                <div class="card-content">
+                    <h2>Pudim de leite condensado</h2>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <div class="info">
+                        <span>120 MIN ⏱</span>
+                        <span>FÁCIL</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="card">
+                <div id="imagem">
+                    <img src="babadecamelo.png" alt="Baba de camelo">
+                </div>
+                <div class="card-content">
+                    <h2>Baba De Camelo</h2>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <div class="info">
+                        <span>80 MIN ⏱</span>
+                        <span>FÁCIL</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="card">
+                <div id="imagem">
+                    <img src="bolo_chocolate.png" alt="Bolo de chocolate">
+                </div>
+                <div class="card-content">
+                    <h2>Bolo de Chocolate</h2>
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+                    <div class="info">
+                        <span>70 MIN ⏱</span>
+                        <span>MÉDIO</span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2 id="h2footer">&copy; 2025 IPSReceitas. Sem Direitos Reservados.</h2>
+    </footer>
+
+</body>
+</html>
