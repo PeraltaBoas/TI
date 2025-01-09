@@ -1,27 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilos.css">
-    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style2.css"/>
+
+    <title>IPSReceitas</title>
 </head>
-<body>
-    <header>
-        <h1 id="h1titulo">EzCook</h1>
-        <img src="let me cook.png" alt="Logo" id="logotitulo">
-        <!-- <a id="sub" href="">Home</a>
-        <a id="sub" href="">Receitas</a> -->
-    </header>
-        <div>
-            <img class="mySlides" src="bacalhau-a-bras.jpg" id="imgbackground">
-            <h1 id="tituloPrincipal">Bacalhau à Bràs</h1>
+<body id="bodymain" style="margin: 0px;">
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <header id="header-main" style="border-bottom: black 1px solid;">
+        <a href="index.html" id="header-buttons"><h1 id="h1-header-main">IPSReceitas</h1></a>
+        <div id="header-search-bar">
+            <input type="text" placeholder="Pesquisar">
+            <button>🔎</button>
         </div>
+
+        <a href="receitas.html" id="header-buttons">Receitas</a>
+        <button class="open-button" onclick="openForm()">Conta</button>
+
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1 style="background-color: white; margin-left: 13.5%;">Iniciar sessão</h1>
+          
+              <label><b>Email</b></label>
+              <input type="text" placeholder="Email" name="email" required>
+          
+              <label><b>Palavra-passe</b></label>
+              <input type="password" placeholder="Palavra-passe" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+            </form>
+          </div>
+    </header>
+
+        <div id="titulo" style="margin-top: 50px;">
+            <hr id="hr3"><h1 id="h1main">Receitas Rápidas</h1><hr id="hr3">
+        </div>
+
+        <div id="tres">
+            <div class="card">
+                <div id="imagem">
+                    <img src="massa.png" alt="Almôndegas">
+                </div>
+                <div class="card-content">
+                    <a href="esparguete.html"><h2>Esparguete com feijão e tomate</h2></a>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <div class="info">
+                        <span>25 MIN ⏱</span>
+                        <span>FÁCIL</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="card">
+                <div id="imagem">
+                    <img src="arroz.png" alt="Arroz">
+                </div>
+                <div class="card-content">
+                    <a href="arroz.html"><h2>Arroz frito com ovos estrelados</h2></a>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <div class="info">
+                        <span>15 MIN ⏱</span>
+                        <span>FÁCIL</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="card">
+                <div id="imagem">
+                    <img src="atum.png" alt="Atum">
+                </div>
+                <div class="card-content">
+                    <a href="atum.html"><h2>Salada de Feijão Frade com Atum</h2></a>
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+                    <div class="info">
+                        <span>10 MIN ⏱</span>
+                        <span>FÁCIL</span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    <div id="butaovermais">
+        <a href="receitas.html" id="vermais"><strong>Ver mais receitas</strong></a>
+    </div>
+
     <footer>
-        <h2 id="h2footer">Redes sociais:</h2>
-        <li>Facebook</li>
-        <li>Instagram</li>
-        <li>X</li>
+        <h2 id="h2footer">&copy; 2025 IPSReceitas. Sem Direitos Reservados.</h2>
     </footer>
+
+
 </body>
 </html>

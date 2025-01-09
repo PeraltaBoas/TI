@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="style2.css"/>
+    <title>IPSReceitas</title>
+</head>
+<body>
+
+    <style>
+        *{
+            margin: 0;
+        }
+
+    </style>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <header id="header-main">
+        <a href="index.html" id="header-buttons"><h1 id="h1-header-main">IPSReceitas</h1></a>
+        <div id="header-search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button>🔎</button>
+        </div>
+
+        <a href="receitas.html" id="header-buttons">Receitas</a>
+        <button class="open-button" onclick="openForm()">Conta</button>
+
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1 style="background-color: white; margin-left: 13.5%;">Iniciar sessão</h1>
+          
+              <label for="email" ><b>Email</b></label>
+              <input type="text" placeholder="Email" name="email" required>
+          
+              <label for="psw"><b>Palavra-passe</b></label>
+              <input type="password" placeholder="Palavra-passe" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+            </form>
+          </div>
+
+    </header>
+
+    <div id="tudo">
+        <div id="centro">
+                <div id="receita-titulo">
+                    <h1>Prego no pão</h1>
+                </div>
+
+                <div id="receita-imagem">
+                    <img src="prego.png" alt="Prego no pão" id="imgcomida">
+                </div>
+                <div id="preparos">
+                    <div id="receita-ingredientes">
+                        <h2>Ingredientes: </h2>
+
+                        <div id="Ingredientes">
+                            <label class="container">2 bifes de vaca
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 caldo
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 colher mostarda 
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1/2 copo cerveja
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1/2 alho em pó
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">Margarina
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div id="receita-passo-a-passo">
+                        <h2>Passo a passo: </h2>
+                            <div id="passo-a-passo">
+                                <div id="seguidos"><div id="numero">1</div>  <a id="passo">Tempere os bifes com sal e pimenta a gosto e o alho. Reserve.</a></div>
+                                <div id="seguidos"><div id="numero">2</div>  <a id="passo">Em uma frigideira, derreta a manteiga e junte o caldo de carne.</a></div>
+                                <div id="seguidos"><div id="numero">3</div>  <a id="passo">A seguir, junte a carne para fritar. Acrescente a mostarda e a cerveja e deixe apurar.<a></div>
+                                <div id="seguidos"><div id="numero">4</div>  <a id="passo">Aqueça o pão e corte ao meio. Coloque o bife e um pouco do molho.</a></div>
+                            </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <h2 id="h2footer">&copy; 2025 IPSReceitas. Sem Direitos Reservados.</h2>
+    </footer>
+
+</body>
+</html>

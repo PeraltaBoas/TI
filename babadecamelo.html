@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="style2.css"/>
+    <title>IPSReceitas</title>
+</head>
+<body>
+
+    <style>
+        *{
+            margin: 0;
+        }
+
+    </style>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <header id="header-main">
+        <a href="index.html" id="header-buttons"><h1 id="h1-header-main">IPSReceitas</h1></a>
+        <div id="header-search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button>🔎</button>
+        </div>
+
+        <a href="receitas.html" id="header-buttons">Receitas</a>
+        <button class="open-button" onclick="openForm()">Conta</button>
+
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1 style="background-color: white; margin-left: 13.5%;">Iniciar sessão</h1>
+          
+              <label for="email" ><b>Email</b></label>
+              <input type="text" placeholder="Email" name="email" required>
+          
+              <label for="psw"><b>Palavra-passe</b></label>
+              <input type="password" placeholder="Palavra-passe" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+            </form>
+          </div>
+
+    </header>
+
+    <div id="tudo">
+        <div id="centro">
+                <div id="receita-titulo">
+                    <h1>Baba de camelo</h1>
+                </div>
+
+                <div id="receita-imagem">
+                    <img src="babadecamelo.png" alt="Baba de camelo" id="imgcomida">
+                </div>
+                <div id="preparos">
+                    <div id="receita-ingredientes">
+                        <h2>Ingredientes: </h2>
+
+                        <div id="Ingredientes">
+                            <label class="container">1 leite condensado cozido
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">5 ovos
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">100 g de amêndoa torrada 
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div id="receita-passo-a-passo">
+                        <h2>Passo a passo: </h2>
+                            <div id="passo-a-passo">
+                                <div id="seguidos"><div id="numero">1</div>  <a id="passo">Comece por separar as gemas das claras.</a></div>
+                                <div id="seguidos"><div id="numero">2</div>  <a id="passo">Numa tigela, deite o leite condensado cozido e as gemas e bata bem, até obter uma mistura homogénea.</a></div>
+                                <div id="seguidos"><div id="numero">3</div>  <a id="passo">Noutro recipiente, bata as claras em castelo.<a></div>
+                                <div id="seguidos"><div id="numero">4</div>  <a id="passo">Junte-as ao preparado anterior, envolvendo cuidadosamente.</a></div>
+                                <div id="seguidos"><div id="numero">5</div>  <a id="passo">Leve a baba de camelo ao frio e sirva decorado com a amêndoa torrada laminada.</a></div>
+                                </a></div>
+                            </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <h2 id="h2footer">&copy; 2025 IPSReceitas. Sem Direitos Reservados.</h2>
+    </footer>
+
+</body>
+</html>

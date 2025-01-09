@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="style2.css"/>
+    <title>IPSReceitas</title>
+</head>
+<body>
+
+    <style>
+        *{
+            margin: 0;
+        }
+
+    </style>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <header id="header-main">
+        <a href="index.html" id="header-buttons"><h1 id="h1-header-main">IPSReceitas</h1></a>
+        <div id="header-search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button>🔎</button>
+        </div>
+
+        <a href="receitas.html" id="header-buttons">Receitas</a>
+        <button class="open-button" onclick="openForm()">Conta</button>
+
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1 style="background-color: white; margin-left: 13.5%;">Iniciar sessão</h1>
+          
+              <label for="email" ><b>Email</b></label>
+              <input type="text" placeholder="Email" name="email" required>
+          
+              <label for="psw"><b>Palavra-passe</b></label>
+              <input type="password" placeholder="Palavra-passe" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+            </form>
+          </div>
+
+    </header>
+
+    <div id="tudo">
+        <div id="centro">
+                <div id="receita-titulo">
+                    <h1>Pudim de leite condensado</h1>
+                </div>
+
+                <div id="receita-imagem">
+                    <img src="pudim.png" alt="Pudim de leite condensado" id="imgcomida">
+                </div>
+                <div id="preparos">
+                    <div id="receita-ingredientes">
+                        <h2>Ingredientes: </h2>
+
+                        <div id="Ingredientes">
+                            <label class="container">100 g açúcar
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">50 ml água
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 leite condensado 
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">1 raspa laranja
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">5 ovos  
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">600 ml leite meio-gordo
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div id="receita-passo-a-passo">
+                        <h2>Passo a passo: </h2>
+                            <div id="passo-a-passo">
+                                <div id="seguidos"><div id="numero">1</div>  <a id="passo">Prepare o caramelo: num tacho, leve ao lume o açúcar e a água e deixe ferver até obter um caramelo dourado.</a></div>
+                                <div id="seguidos"><div id="numero">2</div>  <a id="passo">Use o caramelo para forrar uma forma de pudim.</a></div>
+                                <div id="seguidos"><div id="numero">3</div>  <a id="passo">Coloque o leite condensado numa tigela, junte-lhe a raspa de laranja e os ovos, envolvendo tudo muito bem.<a></div>
+                                <div id="seguidos"><div id="numero">4</div>  <a id="passo">Adicione o leite lentamente e mexa.</a></div>
+                                <div id="seguidos"><div id="numero">5</div>  <a id="passo">Verta o preparado na forma reservada.</a></div>
+                                <div id="seguidos"><div id="numero">6</div>  <a id="passo">Coloque a forma em banho-maria e leve ao forno a 150 ºC, durante 75 minutos.</a></div>
+                                <div id="seguidos"><div id="numero">7</div>  <a id="passo">Deixe arrefecer, desenforme e sirva.</a></div>
+                                </a></div>
+                            </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <h2 id="h2footer">&copy; 2025 IPSReceitas. Sem Direitos Reservados.</h2>
+    </footer>
+
+</body>
+</html>
