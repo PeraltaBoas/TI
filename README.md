@@ -1,8 +1,7 @@
 # TI
-BOAS
 
 ## Auto
-Eu e Jesus Cristo
+O meu trabalho é um site de receitas.
 
 ###
 https://peraltaboas.github.io/TI/
